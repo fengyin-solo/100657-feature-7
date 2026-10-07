@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Dashboard from '@/views/Dashboard.vue'
 const Plant = () => import('@/views/plant/index.vue')
 const Intakepump = () => import('@/views/intakepump/index.vue')
+const IntakepumpDetail = () => import('@/views/intakepump/detail.vue')
 const Dosing = () => import('@/views/dosing/index.vue')
 const Sedimentation = () => import('@/views/sedimentation/index.vue')
 const Filter = () => import('@/views/filter/index.vue')
@@ -26,6 +27,7 @@ const router = createRouter({
     { path: '/', name: 'dashboard', component: Dashboard },
     { path: '/plant', name: 'plant', component: Plant },
     { path: '/intakepump', name: 'intakepump', component: Intakepump },
+    { path: '/intakepump/:id', name: 'intakepump-detail', component: IntakepumpDetail },
     { path: '/dosing', name: 'dosing', component: Dosing },
     { path: '/sedimentation', name: 'sedimentation', component: Sedimentation },
     { path: '/filter', name: 'filter', component: Filter },
