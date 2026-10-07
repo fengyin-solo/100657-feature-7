@@ -82,7 +82,7 @@ import {
 import type { EntryRow } from '@/data/types'
 
 const meta = moduleMeta('equipmaint')
-const columns = ["维护编号", "维护设备", "维护类别", "维护班组", "计划工期", "完工日期", "更换配件", "维护状态"]
+const columns = ["维护编号", "维护设备", "维护类别", "维护班组", "计划工期", "完工日期", "更换配件", "关联泵组编号", "维护状态"]
 const actions = ["提交开工", "确认完工", "申请延期"]
 const statuses = ["待开工", "维护中", "已完工", "已延期"]
 const stats = [{"label": "待开工维护", "value": 0}, {"label": "维护中记录", "value": 0}, {"label": "本月完工数", "value": 0}]
